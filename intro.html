@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Intro</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../kflag.ico" />
+    <link rel="stylesheet" href="./resources/styles/common_units.css" />
+    <link rel="icon" type="image/x-icon" href="/resources/media/kflag.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Schoolbell"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./resources/scripts/move.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <p id="bar"></p>
+      <button id="prev" type="button" disabled>
+        &lt; Prev!
+      </button>
+      <a href="./index.html"><button type="button">🏠</button></a>
+      <button id="next" type="button">Next! &gt;</button>
+      <p id="counter" style="font-size: 1rem">1/</p>
+    </nav>
+
+    <main id="cards">
+      <div class="card">
+        <br />
+        <img
+          src="./resources/media/a.svg"
+          alt="syllable a"
+          title="syllable a"
+        />
+        <p>What is hangeul?, hangeul is the korean alphabet</p>
+        <br>
+        <p>
+          In korean, words are formed by joining syllables, just as in english:
+          alphabet (al-pha-bet), hangeul (han-geul)
+        </p>
+      </div>
+
+      <div class="card">
+        <p style="margin-bottom: 2rem">
+          2. In korean, syllables must have at least one vowel AND one
+          consonant:
+        </p>
+        <img src="./resources/media/a_parts.svg" alt="syllable a" title="syllable a" />
+        <p>
+          The syllable 아 (a), it sounds like: the "a" in c<u>a</u>r (you will
+          learn more about vowels and consonants in detail later)
+        </p>
+      </div>
+
+      <div class="card">
+        <p>3. The "ieung" consonant ㅇ:</p>
+        <img
+          src="./resources/media/eiung_vowel.svg"
+          alt="eiung consonant"
+          title="eiung consonant"
+        />
+        <p>
+          ★This consonant is silent at the beginnig: 아 (ㅏ is the "a" vowel)
+        </p>
+        <p>
+          ★When used at the end, it makes an "ng" sound (si<u>ng</u>), you will
+          learn more about this later, don't worry :)
+        </p>
+      </div>
+
+      <div class="card">
+        <p style="margin-bottom: 2rem">4. good job!:</p>
+        <p>Now you are ready to learn some basic vowels</p>
+        <button
+          class="page-button"
+          onclick="location.href = './2-basic-vowels.html';"
+        >
+          Basic vowels
+        </button>
+      </div>
+    </main>
+
+  </body>
+</html>

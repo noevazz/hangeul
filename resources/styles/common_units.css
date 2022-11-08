@@ -1,0 +1,112 @@
+:root {
+  --color-blue: rgb(6, 82, 221);
+  --color-purple: rgb(102, 72, 209);
+  --color-purple-strong: rgb(67, 35, 182);
+  --color-green: #2ecc85;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Schoolbell, Verdana;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-size: 2rem;
+}
+body::after {
+  background-image: linear-gradient(
+    140deg,
+    var(--color-blue),
+    var(--color-purple)
+  );
+  content: "\a";
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1000;
+}
+nav {
+  text-align: center;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  background-color: rgba(6, 81, 221, 0.5);
+  backdrop-filter: blur(2px);
+}
+nav button {
+  border-radius: 0;
+  border-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  background-color: rgb(233, 64, 34);
+  cursor: pointer;
+}
+nav button:disabled {
+  background-color: rgb(169, 95, 82);
+  cursor: not-allowed;
+}
+#bar {
+  background-color: orange;
+  height: 0.5rem;
+  width: 0;
+  transition: 300ms linear;
+  margin: 0 auto;
+}
+
+.card {
+  display: none;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* GREEN BUTTONS */
+.page-button {
+  background-color: var(--color-green);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  display: block;
+  font-size: 2rem;
+  margin: 1.5rem auto;
+  position: relative;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.page-button:active {
+  top: 3px;
+}
+.page-button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.page-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+img {
+    max-width: 50%;
+}
+
+table {
+  width: 100%;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.images img {
+  margin: 1.5rem;
+}
+
+div#images-vocabulary {
+  display: flex;
+  background-color: blue;
+}

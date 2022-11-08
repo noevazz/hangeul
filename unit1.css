@@ -1,0 +1,9 @@
+div.main2 div {
+	display: none;
+}
+img{
+	max-width: 60%;
+}
+div p, span{
+	font-size: 2.5rem;
+}
