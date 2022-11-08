@@ -23,44 +23,68 @@
       <button id="next" type="button">Next! &gt;</button>
       <p id="counter" style="font-size: 1rem">1/</p>
     </nav>
-
+    <div id="blackBack"></div>
+<h2>THIS PAGE UNDER MAINTENANCE</h2>
     <main id="cards">
-      <div class="card" id="images-vocabulary" style="display: flex;">
-        <div>
-          <div>Child</div>
-          <img src="./resources/media/child.png" alt="child" />
-          <div>아이</div>
-        </div>
+      <div class="card">
+        <div id="images-vocabulary">
+          <section>
+            <div>
+              <div>Child</div>
+              <div>아이</div>
+              <img src="./resources/media/child.png" alt="child" />
+            </div>
 
-        <div>
-          <div>tooth or two</div>
-          <img src="./resources/media/tooth or two.png" alt="tooth or two" />
-          <div>이</div>
-        </div>
+            <div>
+              <div>tooth or two</div>
+              <div>이</div>
+              <img
+                src="./resources/media/tooth or two.png"
+                alt="tooth or two"
+              />
+            </div>
 
-        <div>
-          <div>Cucumber</div>
-          <img src="./resources/media/cucumber.png" alt="cucumber" />
-          <div>오이</div>
-        </div>
+            <div>
+              <div>Cucumber</div>
+              <div>오이</div>
+              <img src="./resources/media/cucumber.png" alt="cucumber" />
+            </div>
+          </section>
+          <section>
+            <div>
+              <div>Fox</div>
+              <div>여우</div>
+              <img src="./resources/media/fox.png" alt="fox" />
+            </div>
 
-        <div>
-          <div>Fox</div>
-          <img src="./resources/media/fox.png" alt="fox" />
-          <div>여우</div>
-        </div>
+            <div>
+              <div>Milk</div>
+              <div>우유</div>
+              <img src="./resources/media/milk.png" alt="milk" />
+            </div>
 
-        <div>
-          <div>Milk</div>
-          <img src="./resources/media/milk.png" alt="milk" />
-          <div>우유</div>
+            <div>
+              <div>Yoyo</div>
+              <div>요요</div>
+              <img src="./resources/media/yoyo.png" alt="yoyo" />
+            </div>
+          </section>
         </div>
+      </div>
 
+      <div class="card exercise">
+        <h2>Exercise</h2>
         <div>
-          <div>Yoyo</div>
-          <img src="./resources/media/yoyo.png" alt="yoyo" />
-          <div>요요</div>
+          <a onclick="checkAnswer(this)" id="linkImg1"><img id="img1" src="./resources/media/child.png" /></a>
+          <a onclick="checkAnswer(this)" id="linkImg2"><img id="img2" src="./resources/media/milk.png" /></a>
+          <a onclick="checkAnswer(this)" id="linkImg3"><img id="img3" src="./resources/media/yoyo.png" /></a>
         </div>
+        <p>click on the image that refers to: 요요</p>
+        <div id="dialogElement">
+          <p id="messageDialog">Oops! 🥴 that's not right, try again</p>
+          <button id="ok">OK</button>
+        </div>
+        
       </div>
 
       <div class="card">
@@ -74,7 +98,6 @@
           <li>이</li>
         </ul>
       </div>
-
     </main>
   </body>
 </html>

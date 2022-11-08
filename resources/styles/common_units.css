@@ -108,5 +108,39 @@ table {
 
 div#images-vocabulary {
   display: flex;
-  background-color: blue;
+  justify-content: space-evenly;
+}
+div#images-vocabulary img {
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
+}
+.exercise img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+#dialogElement {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: none;
+}
+
+#dialogElement button {
+  background-color: #2ecc85;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#blackBack {
+  background-color: rgba(0, 0, 0, 0.495);
+  content: "\a";
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 50;
+  display: none;
 }
